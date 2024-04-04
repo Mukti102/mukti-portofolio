@@ -20,8 +20,10 @@ function Navbar() {
 
   return (
     <nav
-      className={`text-white sm:py-4 py-3 flex items-center justify-between sm:px-12 px-5 right-0 top-0 bg-transparent backdrop-blur-md left-0 fixed ${
-        windowY >= 100 ? "border-b-[.7px] border-slate-700" : null
+      className={`sm:py-4 py-3 flex  items-center justify-between sm:px-12 px-5 right-0 top-0 bg-transparent  left-0 fixed ${
+        windowY >= 100
+          ? "border-b-[.7px] backdrop-blur-md dark:border-slate-700 border-slate-300"
+          : null
       }`}
     >
       <span className={`${satisfy.className} sm:text-4xl text-2xl`}>MuktI</span>

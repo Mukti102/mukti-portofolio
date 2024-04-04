@@ -6,7 +6,7 @@ import Skils from "@/components/Home/Skills";
 function Home() {
   return (
     <>
-      <HomeSection />;
+      <HomeSection />
       <Skils />
     </>
   );

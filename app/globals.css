@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .contentGradient {
   height: fit-content;
   z-index: 3;
