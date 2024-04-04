@@ -7,7 +7,7 @@ function HeroSection() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      <div className="z-50 h-screen flex justify-center items-center relative border-b-[.1px] dark:border-slate-700 border-slate-300">
+      <section className="z-50 h-screen flex justify-center items-center relative border-b-[.1px] dark:border-slate-700 border-slate-300">
         <Navbar />
         <div className="sm:w-1/2 sm:p-0 w-full p-10">
           <h2
@@ -43,7 +43,7 @@ function HeroSection() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
       <GridBackgroundDemo />
     </>
   );
