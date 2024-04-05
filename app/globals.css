@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root  {
+  --color-gradient : linear-gradient(red,blue)
+}
+
+@layer components {
+  .underline-animation {
+    @apply after:w-0 after:block after:h-[2px] after:bg-gradient-to-tr after:from-primary after:to-indigo after:transition-all after:delay-100 after:ease-in-out hover:after:w-full cursor-pointer 
+  }
+  .group-underline-animation{
+    @apply after:w-0 after:block after:h-[2px] after:bg-gradient-to-tr after:from-primary after:to-indigo after:transition-all after:delay-100 after:ease-in-out group-hover:after:w-full cursor-pointer 
+  }
+  .active {
+    @apply font-bold bg-gradient-to-tr from-primary to-indigo bg-clip-text text-transparent
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-indigo bg-clip-text to-90% text-transparent
+  }
+}
 
 .contentGradient {
   height: fit-content;
@@ -29,17 +47,5 @@
   opacity: .15;
 }
 
-.li-underline{
-  cursor: pointer;
-}
-.li-underline::after{
-  content: '';
-  width:0%;
-  display: block;
-  height: 2px;
-  background-color: rgb(187, 2, 187);
-  transition: all .2s ease-in-out;
-}
-.li-underline:hover::after{
-  width: 100%;
-}
+
+

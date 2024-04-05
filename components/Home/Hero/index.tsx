@@ -8,15 +8,14 @@ function HeroSection() {
   return (
     <>
       <section className="z-50 h-screen flex justify-center items-center relative border-b-[.1px] dark:border-slate-700 border-slate-300">
-        <Navbar />
         <div className="sm:w-1/2 sm:p-0 w-full p-10">
           <h2
-            className="sm:text-6xl text-4xl sm:font-bold
+            className="sm:text-6xl text-gradient text-4xl sm:font-bold
            font-semibold"
           >
             Hi, I am Mukti
           </h2>
-          <h1 className="bg-gradient-to-r font-[700] sm:mt-2 mt-1 from-purple-600 to-pink-600  bg-clip-text text-transparent sm:text-6xl  text-4xl">
+          <h1 className="gradient-text font-[700] sm:mt-2 mt-1 sm:text-6xl  text-4xl">
             Front End Developer
           </h1>
           <p className="mt-5 sm:font-[500] font-[400] sm:text-lg text-xs sm:w-full w-full">

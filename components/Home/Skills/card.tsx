@@ -7,7 +7,7 @@ function SkillCard({ item }: { item: Iskills }) {
         <item.icon />
       </span>
       <h1 className="font-[700]">{item?.title}</h1>
-      <p className="font-[300] mt-3 text-slate-400 text-sm">
+      <p className="font-[300] mt-3 dark:text-slate-400 text-slate-500 text-sm">
         {item?.description}
       </p>
     </div>
