@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const flowbite = require("flowbite-react/tailwind");
 const svgToDataUri = require("mini-svg-data-uri");
 
 // const colors = require("tailwindcss/colors");
@@ -11,6 +11,7 @@ const {
 const config: Config = {
   darkMode: "class",
   content: [
+    flowbite.content(),
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -30,6 +31,8 @@ const config: Config = {
     },
   },
   plugins: [
+    flowbite.plugin(),
+    require("daisyui"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(

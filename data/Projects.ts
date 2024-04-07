@@ -1,4 +1,4 @@
-import { IProjects } from "@/types/ProjectTypes";
+import { IProjects } from "@/types/types";
 import imsak_app from "@/public/imsak-app.png";
 import webStore from "@/public/web store.png";
 import webMovie from "@/public/web movie .png";

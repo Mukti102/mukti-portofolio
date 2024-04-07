@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ProviderTheme from "@/components/provider/ThemeProvider";
+import NavbarProvider from "@/components/provider/NavbarProvider";
+import MusicPlayer from "@/components/ui/musicPlayer";
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -22,7 +24,12 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
-        <ProviderTheme>{children}</ProviderTheme>
+        <ProviderTheme>
+          <NavbarProvider>
+            {children}
+            <MusicPlayer />
+          </NavbarProvider>
+        </ProviderTheme>
       </body>
     </html>
   );

@@ -1,5 +1,7 @@
 import React from "@/components/shared/React";
-import { IProjects } from "@/types/ProjectTypes";
+import { IProjects } from "@/types/types";
+import { Tooltip } from "flowbite-react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,9 +18,11 @@ function Card({ item }: { item: IProjects<string> }) {
       <div className="flex gap-2 text-xs">
         {item.staks.map((icn: any) => {
           return (
-            <span className="text-xl hover:text-primary cursor-pointer my-1">
-              {<icn.icon />}
-            </span>
+            <Tooltip content={icn.name} style="auto">
+              <span className="text-xl hover:text-primary cursor-pointer my-1">
+                {<icn.icon />}
+              </span>
+            </Tooltip>
           );
         })}
       </div>

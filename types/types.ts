@@ -10,6 +10,12 @@ interface Ilinks {
   github: string;
 }
 
+export interface Iskills {
+  title: string;
+  description: string;
+  icon: any;
+}
+
 export interface IProjects<T> {
   id: number;
   title: T;
@@ -17,4 +23,12 @@ export interface IProjects<T> {
   image: any;
   staks: Iicons[];
   links: Ilinks;
+}
+
+export interface Isongs<T> {
+  title: T;
+  artis: T;
+  song: T;
+  thumbnail: T;
+  duration: T;
 }

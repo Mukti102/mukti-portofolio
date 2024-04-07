@@ -3,7 +3,7 @@ import NextJs from "@/components/shared/NextJs";
 import Tailwind from "@/components/shared/Tailwind";
 import Typescript from "@/components/shared/Typescript";
 import Javascript from "@/components/shared/Javascript";
-import { Iskills } from "@/types/SkillsTypes";
+import { Iskills } from "@/types/types";
 
 export const Skills: Iskills[] = [
   {

@@ -19,6 +19,13 @@
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-indigo bg-clip-text to-90% text-transparent
   }
+  .bg-gradient {
+    @apply bg-gradient-to-b from-[#02c8e2] dark:to-secondary to-white to-65% z-40
+  }
+}
+
+.flip {
+  transform: rotateY(180deg);
 }
 
 .contentGradient {
@@ -46,6 +53,7 @@
   top: 80px;
   opacity: .15;
 }
+
 
 
 
