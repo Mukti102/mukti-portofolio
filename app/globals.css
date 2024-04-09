@@ -20,7 +20,7 @@
     @apply bg-gradient-to-r from-primary to-indigo bg-clip-text to-90% text-transparent
   }
   .bg-gradient {
-    @apply bg-gradient-to-b from-[#0297ab] dark:to-secondary to-white to-65% z-40
+    @apply bg-gradient-to-b dark:from-[#027382] from-indigo dark:to-secondary to-white to-65% z-40
   }
 }
 

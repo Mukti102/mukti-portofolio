@@ -10,9 +10,9 @@ function page() {
     <section
       className={`w-full ${
         activeSongIndex !== null ? "pb-20" : ""
-      } bg-gradient h-full overflow-y-auto  dark:text-slate-100 sm:px-10  px-5 z-50  dark:bg-opacity-30 bg-opacity-5 pt-24`}
+      } bg-gradient h-full overflow-y-auto dark:text-slate-100 sm:px-10  px-0 z-50  dark:bg-opacity-30 bg-opacity-5 pt-24`}
     >
-      <div className="w-full flex  sm:flex-row flex-col items-center  sm:gap-5">
+      <div className="w-full px-5 flex  sm:flex-row flex-col items-center  sm:gap-5">
         <span className="sm:w-64 sm:h-64 w-64 h-64  shadow-sm overflow-hidden rounded-sm">
           <Image
             src={
@@ -27,7 +27,7 @@ function page() {
           />
         </span>
         <div className="flex flex-col mt-3 gap-2 sm:mt-0 sm:justify-between justify-center  sm:h-64 h-32">
-          <span className="sm:font-semibold sm:text-base text-sm font-normal">
+          <span className="sm:font-semibold sm:text-base text-xs font-normal">
             Playlits
           </span>
           <div className="flex flex-col sm:gap-2 gap-1">

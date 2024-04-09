@@ -52,7 +52,7 @@ function NavbarMobile() {
     animate: {
       scaleY: 1,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
         ease: [0.12, 0, 0.3, 0],
       },
     },
@@ -60,7 +60,7 @@ function NavbarMobile() {
       scaleY: 0,
       transition: {
         delay: 0.2,
-        duration: 0.5,
+        duration: 0.2,
         ease: [0.12, 0, 0.3, 0],
       },
     },
@@ -110,7 +110,7 @@ function NavbarMobile() {
     >
       <span className={`${satisfy.className} text-2xl`}>MuktI</span>
       <span className="z-50">
-        <Hamburger toggle={setIsOpen} toggled={isOpen} size={25} />
+        <Hamburger toggle={setIsOpen} toggled={isOpen} size={22} />
       </span>
       <AnimatePresence>
         {isOpen && (
@@ -125,13 +125,13 @@ function NavbarMobile() {
               variants={ulInitial}
               initial="initial"
               animate="open"
-              className="h-full gap-10 text-3xl flex flex-col justify-center items-center"
+              className="h-full gap-10 text-lg  flex flex-col px-10 py-20"
             >
               {navLinks.map((item, idx) => {
                 const isActive = pathname === item.href;
                 return (
                   <div
-                    className={`${playFair.className} overflow-hidden dark:text-white text-secondary `}
+                    className={`overflow-hidden font-[500] dark:text-white text-secondary `}
                   >
                     <motion.div
                       variants={linkNavbar}
