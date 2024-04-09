@@ -1,21 +1,43 @@
 "use client";
+import { useEffect, useState } from "react";
 import Volume from "./songControl/Volume";
 import SongControl from "./songControl/songControl";
 import useZustand from "@/hooks/useZustand";
+import Image from "next/image";
 
 function MusicPlayer() {
   const { activeSongIndex, songs } = useZustand();
+  const [currentSong, setCurrentSong] = useState<null | any>(null);
+
+  useEffect(() => {
+    if (activeSongIndex !== null) {
+      setCurrentSong(songs[activeSongIndex]);
+    } else return;
+  }, [activeSongIndex]);
+
   return (
     <div
       className={`${
         activeSongIndex === null ? "hidden" : ""
-      } bg-slate-900 py-2 px-6 flex dark:text-slate-100 text-slate-900 justify-center items-center h-[4.5rem] fixed z-50 right-0 left-0 bottom-0`}
+      } bg-slate-900 py-2 justify-between px-6 flex dark:text-slate-100 text-slate-900 sm:justify-center items-center h-[4.5rem] fixed z-50 right-0 left-0 bottom-0`}
     >
-      <div className="w-[25%] flex gap-2 flex-none">
-        <div className="w-14 h-14 bg-purple-600"></div>
-        <div className="flex text-sm flex-col gap-1 justify-center">
-          <h1 className="font-semibold text-sm">Seberapa Pantas</h1>
-          <span className="text-xs font-medium">Asrtis {activeSongIndex}</span>
+      <div className="sm:w-[25%] w-[70%] flex gap-2 flex-none">
+        <div className="sm:w-14 sm:h-14 w-12 rounded-sm sm:rounded-none h-12">
+          <Image
+            src={currentSong?.thumbnail}
+            className="w-full h-full z-50 object-cover"
+            width={100}
+            height={100}
+            alt={currentSong?.title || ""}
+          />
+        </div>
+        <div className="flex text-sm flex-col sm:gap-1 gap-0 justify-center">
+          <h1 className="font-semibold sm:text-sm text-xs">
+            {currentSong?.title}
+          </h1>
+          <span className="sm:text-xs text-[.6rem] font-medium">
+            {currentSong?.artis}
+          </span>
         </div>
       </div>
       <SongControl />

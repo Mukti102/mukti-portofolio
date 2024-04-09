@@ -5,7 +5,7 @@ import { Isongs } from "@/types/types";
 interface Izustand {
   songs: Isongs<string>[];
   activeSongIndex: number | null;
-  setActiveSongIndex: (idx: number) => void;
+  setActiveSongIndex: (idx: number | null) => void;
 }
 
 const useZustand = create<Izustand>((set) => ({

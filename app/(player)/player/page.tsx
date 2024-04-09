@@ -1,12 +1,19 @@
+"use client";
 import Table from "@/components/ui/Table";
 import Image from "next/image";
 import React from "react";
+import useZustand from "@/hooks/useZustand";
 
 function page() {
+  const { activeSongIndex } = useZustand();
   return (
-    <section className="w-full overflow-y-auto h-screen px-10 z-50 bg-black dark:bg-opacity-30 bg-opacity-5 pt-24">
-      <div className="w-full flex gap-5">
-        <span className="w-60 h-60 shadow-sm overflow-hidden rounded-sm">
+    <section
+      className={`w-full ${
+        activeSongIndex !== null ? "pb-20" : ""
+      } bg-gradient h-full overflow-y-auto  dark:text-slate-100 sm:px-10  px-5 z-50  dark:bg-opacity-30 bg-opacity-5 pt-24`}
+    >
+      <div className="w-full flex  sm:flex-row flex-col items-center  sm:gap-5">
+        <span className="sm:w-64 sm:h-64 w-64 h-64  shadow-sm overflow-hidden rounded-sm">
           <Image
             src={
               //   "https://i.pinimg.com/564x/bc/dc/39/bcdc39adb4f2d886859bc7b866c6e7ee.jpg"
@@ -19,14 +26,20 @@ function page() {
             alt="'s"
           />
         </span>
-        <div className="flex flex-col justify-between">
-          <span className="font-semibold">Playlits</span>
-          <h1 className="text-5xl font-bold">My Top Favorite song</h1>
-          <p className="w-[70%] text-sm dark:text-slate-300 text-slate-700">
-            List of my favorite song. Including twice, avenged sevenfold and
-            others. Hope you guys enjoy ^^
-          </p>
-          <p className="text-xs dark:text-slate-300 text-slate-700">
+        <div className="flex flex-col mt-3 gap-2 sm:mt-0 sm:justify-between justify-center  sm:h-64 h-32">
+          <span className="sm:font-semibold sm:text-base text-sm font-normal">
+            Playlits
+          </span>
+          <div className="flex flex-col sm:gap-2 gap-1">
+            <h1 className="sm:text-5xl text-2xl font-bold">
+              My Top Favorite song
+            </h1>
+            <p className="sm:w-[70%] w-full sm:text-sm text-[.7rem] dark:text-slate-300 text-slate-700">
+              List of my favorite song. Including twice, avenged sevenfold and
+              others. Hope you guys enjoy ^^
+            </p>
+          </div>
+          <p className="sm:text-xs text-[.5rem] sm:0 mt-1 dark:text-slate-300 text-slate-700">
             Made by{" "}
             <span className="font-semibold dark:text-slate-200 text-slate-800">
               Mukti

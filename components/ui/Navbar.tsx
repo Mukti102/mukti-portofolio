@@ -39,7 +39,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sm:py-4 py-3 flex z-[100] dark:text-white items-center justify-between sm:px-12 px-5 right-0 top-0 backdrop-blur-lg  bg-transparent left-0 fixed ${
+      className={`sm:py-4 py-3 sm:flex z-[100] hidden dark:text-white items-center justify-between sm:px-12 px-5 right-0 top-0 backdrop-blur-lg  bg-transparent left-0 fixed ${
         windowY >= 100
           ? "border-b-[.7px]  bg-opacity-20 backdrop-blur-md dark:border-slate-800 dark:bg-opacity-30 border-slate-300"
           : null
@@ -59,9 +59,6 @@ function Navbar() {
             </Link>
           );
         })}
-        <div>
-          <TogleTheme />
-        </div>
       </ul>
     </nav>
   );

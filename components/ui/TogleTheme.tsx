@@ -22,8 +22,9 @@ const TogleTheme = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: "32px",
+        // fontSize: "22px",
       }}
+      className="sm:text-[30px] text-[25px]"
       onPointerLeaveCapture={undefined}
     />
   );

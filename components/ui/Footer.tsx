@@ -2,10 +2,13 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-
+import TogleTheme from "./TogleTheme";
 function Footer() {
   return (
-    <footer className="w-full h-full dark:text-slate-300  text-slate-700 dark:bg-secondary sm:pt-16 py-5">
+    <footer className="w-full h-full relative dark:text-slate-300  text-slate-700 dark:bg-secondary sm:pt-16 py-5">
+      <div className="absolute sm:top-32 sm:right-14  top-7 right-2">
+        <TogleTheme />
+      </div>
       <div className="sm:w-[90%] w-full  mx-auto dark:bg-secondary sm:pt-10 pt-5 border-t-[1.4px] sm:px-5 px-3 border-slate-400 flex justify-center flex-col items-center">
         <div>
           <h1 className="font-semibold sm:text-sm text-xs ">Reach me out</h1>
