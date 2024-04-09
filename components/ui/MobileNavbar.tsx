@@ -108,7 +108,9 @@ function NavbarMobile() {
           : null
       }`}
     >
-      <span className={`${satisfy.className} text-2xl`}>MuktI</span>
+      <Link href={"/"} className={`${satisfy.className} text-2xl`}>
+        MuktI
+      </Link>
       <span className="z-50">
         <Hamburger toggle={setIsOpen} toggled={isOpen} size={22} />
       </span>
