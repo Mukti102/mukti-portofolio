@@ -19,10 +19,10 @@ function MusicPlayer() {
     <div
       className={`${
         activeSongIndex === null ? "hidden" : ""
-      } bg-slate-100 shadow-lg dark:bg-slate-900 sm:py-2 py-0 justify-between sm:px-6 pl-0 pr-5 flex dark:text-slate-100 text-black sm:justify-center items-center h-[3.8rem] sm:h-[4.5rem] fixed z-50 right-0 left-0 bottom-0`}
+      } bg-slate-100 shadow-lg dark:bg-slate-900 sm:py-2 py-0 justify-between sm:px-6 pl-0 pr-5 flex dark:text-slate-100 text-black sm:justify-center items-center h-[3.7rem] sm:h-[4.5rem] fixed z-50 right-0 left-0 bottom-0`}
     >
       <div className="sm:w-[25%] w-[70%] h-full flex gap-2 flex-none">
-        <div className="sm:w-14 sm:h-14 w-16 rounded-sm sm:rounded-none h-full">
+        <div className="sm:w-14 sm:h-14 w-14 rounded-sm sm:rounded-none h-full">
           <Image
             src={currentSong?.thumbnail}
             className="w-full h-full z-50 object-cover"
