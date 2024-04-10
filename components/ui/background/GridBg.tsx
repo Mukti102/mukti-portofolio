@@ -7,7 +7,7 @@ export function GridBackgroundDemo() {
       className={`w-full absolute dark:bg-secondary -z-10 top-0 flex justify-center items-center h-full`}
     >
       <div
-        className={`h-full  w-full  dark:bg-secondary bg-[#ffff] dark:bg-grid-white/[0.2] bg-grid-black/[.1] top-0 z-10 flex items-center justify-center `}
+        className={`h-full  w-full  dark:bg-secondary bg-[#ffff] sm:dark:bg-grid-white/[0.2] dark:bg-grid-small-white/[0.2]  bg-grid-black/[.1] top-0 z-10 flex items-center justify-center `}
       >
         <div
           className={`mx-auto absolute blur-2xl opacity-75 w-full h-full flex flex-wrap justify-center -z-10`}

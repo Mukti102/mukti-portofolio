@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useZustand from "./useZustand";
 import { useAudioPlayer } from "react-use-audio-player";
+import { useGlobalAudioPlayer } from "react-use-audio-player";
 
 function useActiveSong() {
   const { activeSongIndex, setActiveSongIndex, songs } = useZustand();
@@ -15,8 +16,10 @@ function useActiveSong() {
     mute,
     volume,
     setVolume,
+    pause,
     seek,
-  } = useAudioPlayer();
+    isReady,
+  } = useGlobalAudioPlayer();
 
   useEffect(() => {
     if (activeSongIndex !== null) {
