@@ -4,7 +4,7 @@ import React from "react";
 export function GridBackgroundDemo() {
   return (
     <div
-      className={`w-full absolute -z-10 top-0 flex justify-center items-center h-full`}
+      className={`w-full absolute dark:bg-secondary -z-10 top-0 flex justify-center items-center h-full`}
     >
       <div
         className={`h-full  w-full  dark:bg-secondary bg-[#ffff] dark:bg-grid-white/[0.2] bg-grid-black/[.1] top-0 z-10 flex items-center justify-center `}

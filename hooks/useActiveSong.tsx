@@ -13,17 +13,15 @@ function useActiveSong() {
     duration,
     getPosition,
     mute,
-    play,
-    pause,
     volume,
     setVolume,
     seek,
-    isReady,
   } = useAudioPlayer();
 
   useEffect(() => {
     if (activeSongIndex !== null) {
       load(songs[activeSongIndex]?.song, {
+        autoplay: true,
         onend() {
           if (activeSongIndex + 1 === songs.length) return;
           setActiveSongIndex(activeSongIndex + 1);
