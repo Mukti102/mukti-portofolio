@@ -4,7 +4,8 @@ import { useTheme } from "next-themes";
 function HeroSection() {
   return (
     <>
-      <section className="z-50 min-h-screen h-full flex dark:text-slate-50 justify-center items-center relative border-b-[.1px] dark:border-slate-700 border-slate-300">
+      <GridBackgroundDemo />
+      <section className="z-50 min-h-screen h-screen flex dark:text-slate-50 justify-center items-center relative border-b-[.1px] dark:border-slate-700 border-slate-300">
         <div className="sm:w-1/2 sm:p-0 w-full p-10">
           <h2
             className="sm:text-6xl text-gradient text-4xl sm:font-bold
@@ -34,7 +35,6 @@ function HeroSection() {
           </div>
         </div>
       </section>
-      <GridBackgroundDemo />
     </>
   );
 }
