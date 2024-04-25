@@ -21,13 +21,13 @@ function Footer() {
             <MdEmail />
           </Link>
           <Link
-            href={""}
+            href={"https://github.com/Mukti102"}
             className="sm:text-2xl text-xl hover:dark:text-white hover:text-slate-700 cursor-pointer"
           >
             <FaGithub />
           </Link>
           <Link
-            href={""}
+            href="https://linkedin.com/in/abdul-mukti-41b876264"
             className="sm:text-2xl text-xl hover:dark:text-white hover:text-slate-700 cursor-pointer"
           >
             <FaLinkedin />

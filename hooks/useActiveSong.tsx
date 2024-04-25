@@ -16,9 +16,7 @@ function useActiveSong() {
     mute,
     volume,
     setVolume,
-    pause,
     seek,
-    isReady,
   } = useGlobalAudioPlayer();
 
   useEffect(() => {

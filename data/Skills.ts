@@ -3,6 +3,7 @@ import NextJs from "@/components/shared/NextJs";
 import Tailwind from "@/components/shared/Tailwind";
 import Typescript from "@/components/shared/Typescript";
 import Javascript from "@/components/shared/Javascript";
+import Laravel from "@/components/shared/laravel";
 import { Iskills } from "@/types/types";
 
 export const Skills: Iskills[] = [
@@ -35,5 +36,11 @@ export const Skills: Iskills[] = [
     description:
       "Experienced in building responsive web interfaces with React.",
     icon: Javascript,
+  },
+  {
+    title: "Laravel",
+    description:
+      "Experienced in building fullsatck web apliccation that interact with database.",
+    icon: Laravel,
   },
 ];
