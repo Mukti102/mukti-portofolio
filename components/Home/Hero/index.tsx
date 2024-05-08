@@ -49,7 +49,7 @@ function HeroSection() {
 
             {/* Open the modal using document.getElementById('ID').showModal() method */}
             <dialog id="my_modal_1" className="modal backdrop-blur-sm">
-              <div className="modal-box w-1/3 p-5 rounded-md border-[1.2px] border-gray-700 dark:bg-black dark:text-slate-100">
+              <div className="modal-box sm:w-1/3 w-[90%] p-5 rounded-md border-[1.2px] border-gray-700 dark:bg-black dark:text-slate-100">
                 <h3 className="font-bold text-lg">Contact me</h3>
                 <div className="my-2">
                   <div className="w-full flex justify-between items-center rounded-md border-[1.2px] border-gray-700 px-3 py-2">

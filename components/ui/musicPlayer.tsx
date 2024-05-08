@@ -66,10 +66,30 @@ function MusicPlayer() {
     }
   }, [isPlaying, open]);
 
+  const imageInitialz = {
+    initial: {
+      transition: {
+        delay: 5,
+        duration: 0.5,
+      },
+    },
+    animate: {
+      transition: {
+        delay: 2,
+        duration: 0.7,
+      },
+    },
+    exit: {
+      transition: {
+        duration: 2,
+      },
+    },
+  };
+
   return (
     <>
       <div
-        onClick={Open}
+        // onClick={Open}
         className={`${
           activeSongIndex === null ? "hidden" : ""
         } bg-slate-100 shadow-lg dark:bg-slate-900 sm:py-2 py-0 justify-between sm:px-6 pl-0 pr-5 flex dark:text-slate-100 text-black sm:justify-center items-center h-[3.7rem] sm:h-[4.5rem] fixed z-50 right-0 left-0 bottom-0`}
@@ -109,7 +129,12 @@ function MusicPlayer() {
               <GrNext />
             </button>
             <div className="w-full">
-              <div className="w-full h-80 bg-red-300">
+              <motion.div
+                variants={imageInitialz}
+                initial="initialz"
+                animate="animated"
+                className="w-full h-80 bg-red-300"
+              >
                 <Image
                   src={currentSong?.thumbnail}
                   alt={currentSong?.title}
@@ -117,7 +142,7 @@ function MusicPlayer() {
                   height={70}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </motion.div>
               <div className="mt-10">
                 <h1 className="font-[600] text-xl">{currentSong?.title}</h1>
                 <p className="text-sm">{currentSong?.artis}</p>

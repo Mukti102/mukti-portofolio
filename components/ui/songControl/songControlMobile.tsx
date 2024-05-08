@@ -65,7 +65,7 @@ function SongControlMobile() {
           onClick={() => togglePlayPause()}
           className={`${
             isLoading ? "cursor-not-allowed" : "cursor-pointer"
-          } w-12 h-12 text-lg bg-white flex justify-center items-center rounded-full text-black`}
+          } w-12 h-12 text-lg bg-white flex z-50 justify-center items-center rounded-full text-black`}
         >
           {isLoading ? <FiLoader /> : playing ? <FaPause /> : <FaPlay />}
         </button>

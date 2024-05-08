@@ -40,7 +40,7 @@ function SongControl() {
 
   return (
     <div className="flex-1 sm:flex  flex-col gap-1 items-center justify-center h-full">
-      <div className="w-full  h-full items-center sm:h-max flex gap-10 sm:justify-center justify-end">
+      <div className="w-full   h-full items-center sm:h-max flex gap-10 sm:justify-center justify-end">
         <button onClick={() => prevSong()} className="sm:inline hidden">
           <SkipNext className="w-[14px] h-[14px] fill-current flip" />
         </button>
@@ -48,7 +48,7 @@ function SongControl() {
           onClick={() => togglePlayPause()}
           className={`${
             isLoading ? "cursor-not-allowed" : "cursor-pointer"
-          } w-7 h-7 text-sm bg-white flex justify-center items-center rounded-full text-black`}
+          } w-7 h-7 text-sm bg-white z-[1000px] flex justify-center items-center rounded-full text-black`}
         >
           {isLoading ? <FiLoader /> : playing ? <FaPause /> : <FaPlay />}
         </button>
