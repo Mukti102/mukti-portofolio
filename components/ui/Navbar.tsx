@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Arizonia } from "next/font/google";
 import Link from "next/link";
+import { Inter } from "next/font/google";
 import { usePathname } from "next/navigation";
-import TogleTheme from "./TogleTheme";
 
-const satisfy = Arizonia({
+const inter = Inter({
+  weight: "500",
   subsets: ["latin"],
-  weight: "400",
 });
 
 const navLinks = [
@@ -17,10 +16,6 @@ const navLinks = [
   {
     name: "Player",
     href: "/player",
-  },
-  {
-    name: "Blog",
-    href: "/blog",
   },
 ];
 
@@ -39,13 +34,19 @@ function Navbar() {
 
   return (
     <nav
-      className={`sm:py-4 py-3 sm:flex z-[100] hidden dark:text-white items-center justify-between sm:px-12 px-5 right-0 top-0 backdrop-blur-lg  bg-transparent left-0 fixed ${
+      className={`${
+        inter.className
+      } sm:py-4 py-3 sm:flex z-[100] hidden dark:text-white items-center justify-between sm:px-12 px-5 right-0 top-0  bg-transparent left-0 fixed ${
         windowY >= 100
-          ? "border-b-[.7px]  bg-opacity-20 backdrop-blur-md dark:border-slate-800 dark:bg-opacity-30 border-slate-300"
+          ? "border-b-[.7px]  bg-opacity-20 dark:bg-black bg-white  dark:border-slate-800 dark:bg-opacity-30 border-slate-300"
           : null
       }`}
     >
-      <span className={`${satisfy.className} sm:text-4xl text-2xl`}>MuktI</span>
+      <div>
+        <span className={`sm:text-4xl text-xl font-semibold`}>
+          M<span className="gradient-text">KT</span>
+        </span>
+      </div>
       <ul className="sm:flex items-center hidden w-1/3 justify-evenly font-semibold sm:text-[1rem]">
         {navLinks.map((item, idx) => {
           const isActive = pathname === item.href;

@@ -39,7 +39,7 @@ function Table() {
                   </span>
                   <div className="flex flex-col gap-[.10rem] justify-center py-1">
                     <h1
-                      className={`sm:text-lg text-sm font-semibold ${
+                      className={`sm:text-md  text-sm font-semibold ${
                         isActive ? "text-primary" : ""
                       }`}
                     >
@@ -50,7 +50,7 @@ function Table() {
                     </span>
                   </div>
                 </td>
-                <td className="text-center sm:table-cell text-[.7rem] hidden">
+                <td className="text-center sm:text-sm sm:table-cell text-[.7rem] hidden">
                   {item.artis}
                 </td>
                 <td className="sm:text-center text-end sm:text-sm text-[.6rem]">

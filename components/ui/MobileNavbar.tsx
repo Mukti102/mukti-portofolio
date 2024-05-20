@@ -21,10 +21,6 @@ const navLinks = [
     name: "Player",
     href: "/player",
   },
-  {
-    name: "Blog",
-    href: "/blog",
-  },
 ];
 const playFair = Playfair_Display({
   subsets: ["latin"],
@@ -35,6 +31,7 @@ function NavbarMobile() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [windowY, setWindowY] = useState<number>(0);
+
   useEffect(() => {
     const handleScroll = () => {
       setWindowY(window.scrollY);
@@ -102,7 +99,7 @@ function NavbarMobile() {
 
   return (
     <nav
-      className={` py-2 flex z-[100] dark:text-white items-center justify-between pl-5 pr-2 right-0 top-0 backdrop-blur-lg  bg-transparent left-0 fixed ${
+      className={` py-2 md:hidden flex z-[100] dark:text-white items-center justify-between pl-5 pr-2 right-0 top-0 backdrop-blur-lg  bg-transparent left-0 fixed ${
         windowY >= 100
           ? "border-b-[.7px]  bg-opacity-20 backdrop-blur-md dark:border-slate-800 dark:bg-opacity-30 border-slate-300"
           : null

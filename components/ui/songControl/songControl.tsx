@@ -56,7 +56,7 @@ function SongControl() {
           <SkipNext className="w-[14px] h-[14px] fill-current " />
         </button>
       </div>
-      <div className="sm:flex gap-2 items-center hidden text-[.6rem]">
+      <div className="sm:flex w-[70%] gap-2 items-center hidden text-[.6rem]">
         <span>{convertToSecond(currentTime)}</span>
         <input
           type="range"
