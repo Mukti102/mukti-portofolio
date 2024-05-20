@@ -105,8 +105,8 @@ function NavbarMobile() {
           : null
       }`}
     >
-      <Link href={"/"} className={`${satisfy.className} text-2xl`}>
-        MuktI
+      <Link href={"/"} className={`font-semibold text-2xl`}>
+        M<span className="gradient-text">KT</span>
       </Link>
       <span className="z-50">
         <Hamburger toggle={setIsOpen} toggled={isOpen} size={22} />
