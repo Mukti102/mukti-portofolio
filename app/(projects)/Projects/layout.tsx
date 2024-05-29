@@ -24,7 +24,7 @@ function layout({ children }: { children: React.ReactElement }) {
     },
   ];
   return (
-    <div className="w-full md:mt-0 py-32   gap-10 md:h-screen flex flex-col px-10 md:justify-center justify-start  items-cente">
+    <div className="w-full md:mt-0 py-32  bg-white gap-10 md:h-screen flex flex-col px-10 md:justify-center justify-start  items-cente">
       {/* title */}
       <div className="mx-auto">
         <h1 className="font-black text-3xl">
