@@ -51,7 +51,7 @@ function Contact() {
               <span className="text-pink-500 text-lg">
                 <MdMailOutline />
               </span>
-              <h2 className="text-xs mt-1 font-semibold">Email</h2>
+              <h2 className="text-xs mt-1 text-black font-semibold">Email</h2>
               <p className="text-xs text-gray-700">Abdulmukti@gmail.com</p>
             </div>
           </div>
@@ -60,20 +60,20 @@ function Contact() {
           <div className="w-full overflow-hidden inner-shadow px-5 py-1.5 rounded-full">
             <input
               type="text"
-              className="w-full bg-transparent border-none placeholder:text-sm placeholder:font-medium   outline-none text-sm placeholder:text-gray-400"
+              className="w-full text-gray-900 bg-transparent border-none placeholder:text-sm placeholder:font-medium   outline-none text-sm placeholder:text-gray-400"
               placeholder="Enter Your Name"
             />
           </div>
           <div className="w-full overflow-hidden my-4 inner-shadow px-5 py-1.5 rounded-full">
             <input
               type="email"
-              className="w-full border-none bg-transparent placeholder:text-sm placeholder:font-medium   outline-none text-sm placeholder:text-gray-400"
+              className="w-full text-gray-900 border-none bg-transparent placeholder:text-sm placeholder:font-medium focus:border-1 focus:border-red-200 text-sm placeholder:text-gray-400"
               placeholder="Enter Your Email"
             />
           </div>
           <div className="w-full overflow-hidden my-4 inner-shadow px-5 py-1.5 rounded-xl">
             <textarea
-              className="w-full mt-2 h-36 border-none  bg-transparent placeholder:text-sm placeholder:font-medium  text-sm placeholder:text-gray-400"
+              className="w-full mt-2 text-gray-900 h-36 border-none  bg-transparent placeholder:text-sm placeholder:font-medium  text-sm placeholder:text-gray-400"
               placeholder="Enter Your Message"
             />
           </div>

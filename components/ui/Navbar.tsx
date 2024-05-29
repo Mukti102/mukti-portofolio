@@ -56,26 +56,26 @@ function Navbar() {
           );
         })}
       </ul>
-      <div className="h-16 rounded-xl  w-screen items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
+      <div className="h-14 rounded-tr-xl rounded-tl-xl  w-screen items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
         {/* <a className="text-2xl flex-1 flex justify-center">
           <FaLaptopCode />
         </a> */}
-        <Link href="/About" className="text-[21px] flex-1 flex justify-center">
+        <Link href="/About" className="text-[19px] flex-1 flex justify-center">
           <FaBookReader />
         </Link>
-        <Link href="/Skills" className="text-xl flex-1 flex justify-center">
+        <Link href="/Skills" className="text-lg flex-1 flex justify-center">
           <BsStack />
         </Link>
-        <Link href="/" className="text-3xl flex-1 flex justify-center">
+        <Link href="/" className="text-2xl flex-1 flex justify-center">
           <FaHome />
         </Link>
         <Link
           href="/Projects/ReactJs"
-          className="text-2xl flex-1 flex justify-center"
+          className="text-xl flex-1 flex justify-center"
         >
           <FaLaptopCode />
         </Link>
-        <Link href="/Contact" className="text-2xl flex-1 justify-center flex">
+        <Link href="/Contact" className="text-xl flex-1 justify-center flex">
           <IoPerson />
         </Link>
       </div>
