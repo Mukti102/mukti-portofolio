@@ -6,7 +6,7 @@ function Toggle() {
   return (
     <Link
       href="/player"
-      className="px-2 py-1 out-shadow rounded-md text-xl md:text-3xl"
+      className="px-2 py-1 text-black out-shadow rounded-md text-xl md:text-3xl"
     >
       <FaSpotify />
     </Link>

@@ -34,7 +34,7 @@ function Navbar() {
     },
   ];
   return (
-    <nav className="flex  h-max z-50  shadow-md px-4 md:px-10 fixed bg-white  right-0 top-0 left-0 items-center w-full justify-between py-3">
+    <nav className="flex w-screen  h-max z-50 text-black shadow-md px-4 md:px-10 fixed bg-white  right-0 top-0 left-0 items-center md:w-full justify-between py-3">
       {/* logo */}
       <a
         href="/"
@@ -56,7 +56,7 @@ function Navbar() {
           );
         })}
       </ul>
-      <div className="h-16 rounded-xl items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
+      <div className="h-16 rounded-xl  w-screen items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
         {/* <a className="text-2xl flex-1 flex justify-center">
           <FaLaptopCode />
         </a> */}

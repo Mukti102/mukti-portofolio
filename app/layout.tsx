@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <ProviderTheme> */}
         <NavbarProvider>
-          {children}
+          <div className="md:w-full w-screen overflow-hidden">{children}</div>
           <MusicPlayer />
         </NavbarProvider>
         {/* </ProviderTheme> */}
