@@ -28,11 +28,11 @@ function page() {
             />
           </span>
           <div className="flex flex-col mt-3 gap-2 sm:mt-0 sm:justify-between justify-center  sm:h-64 h-32">
-            <span className="sm:font-semibold sm:text-base text-xs font-normal">
+            <span className="sm:font-semibold text-black sm:text-base text-xs font-normal">
               Playlits
             </span>
             <div className="flex flex-col sm:gap-2 gap-1">
-              <h1 className="sm:text-5xl text-2xl font-bold">
+              <h1 className="sm:text-5xl text-black text-2xl font-bold">
                 My Top Favorite song
               </h1>
               <p className="sm:w-[70%] w-full sm:text-sm text-[.7rem] dark:text-slate-300 text-slate-700">

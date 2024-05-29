@@ -12,7 +12,7 @@ function Contact() {
         data-aos-easing="ease-in-out"
         className="max-w-max mx-auto"
       >
-        <h1 className="text-3xl font-extrabold">
+        <h1 className="text-3xl text-black font-extrabold">
           Contact <span className="text-pink-500">Me</span>
         </h1>
       </div>
@@ -29,7 +29,7 @@ function Contact() {
               <span className="text-pink-500 text-sm md:text-lg">
                 <FaRegAddressCard />
               </span>
-              <h2 className="text-xs mt-1 font-semibold">Adress</h2>
+              <h2 className="text-xs text-black mt-1 font-semibold">Adress</h2>
               <p className="text-xs text-gray-700">
                 Jember,East Java,Indonesia
               </p>
@@ -40,7 +40,9 @@ function Contact() {
               <span className="text-pink-500 text-lg">
                 <MdOutlineLocalPhone />
               </span>
-              <h2 className="text-xs mt-1 font-semibold">Phone Number</h2>
+              <h2 className="text-xs mt-1 text-black font-semibold">
+                Phone Number
+              </h2>
               <p className="text-xs text-gray-700">+6281336920647</p>
             </div>
           </div>

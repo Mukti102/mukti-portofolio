@@ -27,7 +27,7 @@ function layout({ children }: { children: React.ReactElement }) {
     <div className="w-full md:mt-0 py-32  bg-white gap-10 md:h-screen flex flex-col px-10 md:justify-center justify-start  items-cente">
       {/* title */}
       <div className="mx-auto">
-        <h1 className="font-black text-3xl">
+        <h1 className="font-black text-black text-3xl">
           Projects <span className="text-pink-500">Latest</span>
         </h1>
       </div>

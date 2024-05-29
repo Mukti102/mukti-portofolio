@@ -7,7 +7,7 @@ function Table() {
   const { setActiveSongIndex, songs, activeSongIndex } = useZustand();
   const songIndex = activeSongIndex !== null ? activeSongIndex : 0;
   return (
-    <div className="overflow-y-auto md:p-3 p-1 out-shadow  h-full mt-5">
+    <div className="overflow-y-auto md:p-3 p-1 shadow-none md:out-shadow  h-full mt-5">
       <table className="table">
         {/* head */}
         <thead>
@@ -39,7 +39,7 @@ function Table() {
                   </span>
                   <div className="flex flex-col gap-[.10rem] justify-center py-1">
                     <h1
-                      className={`sm:text-md  text-sm font-semibold ${
+                      className={`sm:text-md  text-sm text-black font-semibold ${
                         isActive ? "text-primary" : ""
                       }`}
                     >
@@ -53,7 +53,7 @@ function Table() {
                 <td className="text-center sm:text-sm sm:table-cell text-[.7rem] hidden">
                   {item.artis}
                 </td>
-                <td className="sm:text-center text-end sm:text-sm text-[.6rem]">
+                <td className="sm:text-center text-gray-800 text-end sm:text-sm text-[.6rem]">
                   {item?.duration}
                 </td>
               </tr>

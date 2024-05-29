@@ -31,7 +31,7 @@ function Skills() {
                   <img src={item.icon} className="w-9 h-9" />
                 </div>
                 <div className="w-full py-12 px-4">
-                  <h1 className="font-semibold">{item.name}</h1>
+                  <h1 className="font-semibold text-black">{item.name}</h1>
                   <p className="text-xs text-gray-800 mt-1">
                     {item.description}
                   </p>
