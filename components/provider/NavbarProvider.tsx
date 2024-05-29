@@ -4,7 +4,7 @@ import Navbar from "../ui/Navbar";
 function NavbarProvider({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <NavbarMobile />
+      {/* <NavbarMobile /> */}
       <Navbar />
       {children}
     </>

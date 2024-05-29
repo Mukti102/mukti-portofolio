@@ -7,7 +7,7 @@ function Table() {
   const { setActiveSongIndex, songs, activeSongIndex } = useZustand();
   const songIndex = activeSongIndex !== null ? activeSongIndex : 0;
   return (
-    <div className="overflow-y-auto  h-full mt-5">
+    <div className="overflow-y-auto md:p-3 p-1 out-shadow  h-full mt-5">
       <table className="table">
         {/* head */}
         <thead>
@@ -24,7 +24,7 @@ function Table() {
             return (
               <tr
                 onClick={() => setActiveSongIndex(idx)}
-                className="border-none dark:hover:bg-slate-800 hover:bg-slate-300 hover:dark:bg-opacity-50 bg-opacity-40 cursor-pointer"
+                className="border-none sm:shadow-sm  out-shadow dark:hover:bg-slate-800 hover:bg-slate-100 hover:dark:bg-opacity-50 bg-opacity-40 cursor-pointer"
               >
                 <th className="sm:table-cell hidden">{idx + 1}</th>
                 <td className="flex sm:gap-2 gap-3 w-[90%]">

@@ -1,18 +1,14 @@
 "use client";
-import Navbar from "@/components/ui/Navbar";
-import HomeSection from "@/components/Home/Hero/index";
-import Project from "@/components/Home/Projects";
-import Skils from "@/components/Home/Skills";
-import Footer from "@/components/ui/Footer";
+import Hero from "@/components/pages/home";
 
 function Home() {
   return (
-    <div className="dark:bg-secondary bg-white">
-      <Navbar />
-      <HomeSection />
-      <Skils />
-      <Project />
-      <Footer />
+    <div className="dark:bg-secondary sm:pb-0 pb-20 bg-white">
+      <Hero />
+      {/* <Navbar /> */}
+      {/* <Skils /> */}
+      {/* <Project /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

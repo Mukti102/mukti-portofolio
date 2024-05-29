@@ -1,66 +1,86 @@
-import React, { useEffect, useState } from "react";
+import { FaHome } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+import { FaBookReader } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { BsStack } from "react-icons/bs";
+import { IoPerson } from "react-icons/io5";
 import Link from "next/link";
-import { Inter } from "next/font/google";
-import { usePathname } from "next/navigation";
-
-const inter = Inter({
-  weight: "500",
-  subsets: ["latin"],
-});
-
-const navLinks = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Player",
-    href: "/player",
-  },
-];
-
+import Toggle from "./Toggle";
 function Navbar() {
-  const pathname = usePathname();
-  const [windowY, setWindowY] = useState<number>(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      setWindowY(window.scrollY);
-    };
-    addEventListener("scroll", handleScroll);
-    return () => {
-      removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+  const lists: any[] = [
+    {
+      href: "/",
+      name: "Home",
+    },
+    {
+      href: "/About",
+      name: "About",
+    },
+    {
+      href: "/Skills",
+      name: "Skills",
+    },
+    {
+      href: "/Projects/ReactJs",
+      name: "Projects",
+    },
+    {
+      href: "/player",
+      name: "Player",
+    },
+    {
+      href: "/Contact",
+      name: "Contact",
+    },
+  ];
   return (
-    <nav
-      className={`${
-        inter.className
-      } sm:py-4 py-3 sm:flex z-[100] hidden dark:text-white items-center justify-between sm:px-12 px-5 right-0 top-0  bg-transparent left-0 fixed ${
-        windowY >= 100
-          ? "border-b-[.7px]  bg-opacity-20 dark:bg-black bg-white  dark:border-slate-800 dark:bg-opacity-30 border-slate-300"
-          : null
-      }`}
-    >
-      <div>
-        <span className={`sm:text-4xl text-xl font-semibold`}>
-          M<span className="gradient-text">KT</span>
-        </span>
-      </div>
-      <ul className="sm:flex items-center hidden w-1/3 justify-evenly font-semibold sm:text-[1rem]">
-        {navLinks.map((item, idx) => {
-          const isActive = pathname === item.href;
+    <nav className="flex  h-max z-50  shadow-md px-4 md:px-10 fixed bg-white  right-0 top-0 left-0 items-center w-full justify-between py-3">
+      {/* logo */}
+      <a
+        href="/"
+        className="font-bold z-50 w-max px-3 md:px-5 md:py-1 out-shadow rounded-md h-max"
+      >
+        <h1 className="text-black text-lg md:text-2xl">
+          CHEV<span className="text-pink-500">DEV</span>
+        </h1>
+      </a>
+      {/* ul list */}
+      <ul className="md:flex hidden font-semibold gap-5 text-[17px] capitalize">
+        {lists.map((item, index) => {
           return (
-            <Link
-              key={idx}
-              href={item?.href}
-              className={`${isActive ? "active" : null} underline-animation`}
-            >
-              {item?.name}
-            </Link>
+            <li key={index}>
+              <Link href={item.href} className="hover:text-pink-500">
+                {item.name}
+              </Link>
+            </li>
           );
         })}
       </ul>
+      <div className="h-16 rounded-xl items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
+        {/* <a className="text-2xl flex-1 flex justify-center">
+          <FaLaptopCode />
+        </a> */}
+        <Link href="/About" className="text-[21px] flex-1 flex justify-center">
+          <FaBookReader />
+        </Link>
+        <Link href="/Skills" className="text-xl flex-1 flex justify-center">
+          <BsStack />
+        </Link>
+        <Link href="/" className="text-3xl flex-1 flex justify-center">
+          <FaHome />
+        </Link>
+        <Link
+          href="/Projects/ReactJs"
+          className="text-2xl flex-1 flex justify-center"
+        >
+          <FaLaptopCode />
+        </Link>
+        <Link href="/Contact" className="text-2xl flex-1 justify-center flex">
+          <IoPerson />
+        </Link>
+      </div>
+      {/* togle  */}
+      <Toggle />
     </nav>
   );
 }

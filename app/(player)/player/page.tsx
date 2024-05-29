@@ -10,10 +10,10 @@ function page() {
     <section
       className={`w-full ${
         activeSongIndex !== null ? "pb-20" : ""
-      } bg-gradient h-full overflow-y-auto dark:text-slate-100 sm:px-10  px-0 z-50  dark:bg-opacity-30 bg-opacity-5 pt-24`}
+      }  h-full overflow-y-auto pb-28 dark:text-slate-100 sm:px-10  px-0 z-50  dark:bg-opacity-30 bg-opacity-5 pt-24`}
     >
       <div className="w-full px-5 flex  sm:flex-row flex-col items-center  sm:gap-5">
-        <span className="sm:w-64 sm:h-64 w-64 h-64  shadow-sm overflow-hidden rounded-sm">
+        <span className="sm:w-64 out-shadow p-0 sm:h-64 w-64 h-64  shadow-sm overflow-hidden rounded-sm">
           <Image
             src={
               //   "https://i.pinimg.com/564x/bc/dc/39/bcdc39adb4f2d886859bc7b866c6e7ee.jpg"

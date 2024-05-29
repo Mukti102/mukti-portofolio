@@ -5,7 +5,6 @@ import Typescript from "@/components/shared/Typescript";
 import Javascript from "@/components/shared/Javascript";
 import Laravel from "@/components/shared/laravel";
 import { Iskills } from "@/types/types";
-
 export const Skills: Iskills[] = [
   {
     title: "React Js",
