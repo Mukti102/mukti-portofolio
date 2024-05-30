@@ -24,7 +24,7 @@ function layout({ children }: { children: React.ReactElement }) {
     },
   ];
   return (
-    <div className="w-full md:mt-0 py-32  bg-white gap-10 md:h-screen flex flex-col px-10 md:justify-center justify-start  items-cente">
+    <div className="w-full md:mt-0 py-32  bg-gray-100 gap-10 md:h-screen flex flex-col px-10 md:justify-center justify-start  items-cente">
       {/* title */}
       <div className="mx-auto">
         <h1 className="font-black text-black text-3xl">
@@ -44,7 +44,7 @@ function layout({ children }: { children: React.ReactElement }) {
               <Link
                 href={"/Projects/" + item.link}
                 key={index}
-                className="out-shadow my-1 md:my-5 w-max px-5 flex justify-center hover:text-pink-500 md:w-full capitalize py-1 md:py-3.5 text-xs md:text-[1rem] text-gray-800 rounded-sm md:rounded-md font-semibold"
+                className="out-shadow  my-1 md:my-5 w-max px-5 flex justify-center hover:text-pink-500 md:w-full capitalize py-1 md:py-3.5 text-xs md:text-[1rem] text-gray-800 rounded-sm md:rounded-md font-semibold"
               >
                 {item.name}
               </Link>

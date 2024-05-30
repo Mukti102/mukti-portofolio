@@ -34,7 +34,7 @@ function Navbar() {
     },
   ];
   return (
-    <nav className="flex w-screen  h-max z-50 text-black shadow-md px-4 md:px-10 fixed bg-white  right-0 top-0 left-0 items-center md:w-full justify-between py-3">
+    <nav className="flex w-screen  h-max z-50 text-black shadow-md px-4 md:px-10 fixed bg-gray-100  right-0 top-0 left-0 items-center md:w-full justify-between py-3">
       {/* logo */}
       <a
         href="/"

@@ -23,7 +23,7 @@ function About() {
           consectetur vitae laboriosam?
         </p>
         <div className="my-5">
-          <span className="md:px-12 px-9 py-2 rounded-md text-gray-800 md:py-3 md:text-lg text-sm out-shadow">
+          <span className="md:px-12 px-9 py-2 bg-gray-50 rounded-md text-gray-800 md:py-3 md:text-lg text-sm out-shadow">
             Download CV
           </span>
         </div>

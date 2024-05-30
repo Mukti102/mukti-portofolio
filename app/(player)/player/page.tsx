@@ -7,7 +7,7 @@ import useZustand from "@/hooks/useZustand";
 function page() {
   const { activeSongIndex } = useZustand();
   return (
-    <div className="dark:bg-secondary sm:pb-0 pb-20 bg-white">
+    <div className="dark:bg-secondary sm:pb-0 pb-20 bg-gray-100">
       <section
         className={`w-full ${
           activeSongIndex !== null ? "pb-20" : ""

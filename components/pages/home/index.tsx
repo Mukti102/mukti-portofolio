@@ -14,7 +14,7 @@ function Hero() {
     <>
       {/* hero */}
       <div
-        className={`md:bg-grid-black/15  bg-grid-black/0 w-full pt-28 font-bold block  md:flex items-center justify-between h-max  md:gap-5 px-5 md:px-20`}
+        className={` w-full pt-28 font-bold block  md:flex items-center justify-between h-max  md:gap-5 px-5 md:px-20`}
       >
         <div
           data-aos="fade-right"
@@ -53,31 +53,31 @@ function Hero() {
           <div className="my-2 flex w-full md:mt-0 mt-5 gap-5">
             <a
               href="https://github.com/Mukti102"
-              className="out-shadow text-black bg-white   w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+              className="out-shadow text-black    w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
             >
               <FaGithub />
             </a>
             <a
               href="https://www.instagram.com/mukti_040/?hl=en"
-              className="out-shadow text-black bg-white w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+              className="out-shadow text-black  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.tiktok.com/@mkt_code?_t=8jeWnsgGXBw&_r=1"
-              className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+              className="out-shadow text-black   w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
             >
               <FaTiktok />
             </a>
             <a
               href="https://www.linkedin.com/in/abdul-mukti-41b876264/"
-              className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+              className="out-shadow text-black   w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
             >
               <FaLinkedin />
             </a>
           </div>
           <div className="mt-5">
-            <button className="md:px-12 px-10   rounded-md text-gray-800 md:py-3 py-2 text-lg out-shadow bg-white">
+            <button className="md:px-12 px-10   rounded-md text-gray-800 md:py-3 py-2 text-lg out-shadow ">
               Hire Me
             </button>
           </div>
@@ -85,7 +85,7 @@ function Hero() {
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="md:w-max md:z-50 z-50 bg-white w-full"
+          className="md:w-max md:z-50 z-50 w-full"
         >
           <div className="out-shadow md:mt-0 my-10  md:p-10 p-0 rounded-md flex justify-center md:w-max w-full py-5">
             {/* <img src={ai} alt="AI illustration" className="w-[19rem]" /> */}
@@ -99,7 +99,7 @@ function Hero() {
           </div>
         </div>
         <div
-          className={`absolute hidden pointer-events-none  bottom-0 inset-0 md:flex items-center justify-center dark:bg-secondary bg-[#fff]  [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]`}
+          className={`absolute hidden pointer-events-none  bottom-0 inset-0 md:flex items-center justify-center dark:bg-secondary bg-gray-100  [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]`}
         ></div>
       </div>
     </>
