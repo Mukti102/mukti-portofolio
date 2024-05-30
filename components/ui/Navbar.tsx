@@ -41,7 +41,7 @@ function Navbar() {
         className="font-bold z-50 w-max px-3 md:px-5 md:py-1 out-shadow rounded-md h-max"
       >
         <h1 className="text-black text-lg md:text-2xl">
-          CHEV<span className="text-pink-500">DEV</span>
+          SPEC<span className="text-pink-500">TER</span>
         </h1>
       </a>
       {/* ul list */}

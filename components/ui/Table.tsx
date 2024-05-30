@@ -24,7 +24,7 @@ function Table() {
             return (
               <tr
                 onClick={() => setActiveSongIndex(idx)}
-                className="border-none sm:shadow-sm  out-shadow dark:hover:bg-slate-800 hover:bg-slate-100 hover:dark:bg-opacity-50 bg-opacity-40 cursor-pointer"
+                className="border-none border-spacing-56 sm:shadow-sm  dark:hover:bg-slate-800 hover:bg-slate-100 hover:dark:bg-opacity-50 bg-opacity-40 cursor-pointer"
               >
                 <th className="sm:table-cell hidden">{idx + 1}</th>
                 <td className="flex sm:gap-2 gap-3 w-[90%]">

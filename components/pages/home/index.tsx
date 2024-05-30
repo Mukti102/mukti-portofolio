@@ -23,7 +23,7 @@ function Hero() {
         >
           <h2 className="md:text-2xl text-black text-xl">Hello It's me</h2>
           <h1 className="font-black text-[2rem] md:text-[3rem] text-pink-500">
-            Rachel
+            Mukti
           </h1>
           <span className="md:text-3xl text-black text-xl">
             And I am{" "}
@@ -51,18 +51,30 @@ function Hero() {
             Consequatur consectetur vitae laboriosam?
           </p>
           <div className="my-2 flex w-full md:mt-0 mt-5 gap-5">
-            <button className="out-shadow text-black bg-white   w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md">
+            <a
+              href="https://github.com/Mukti102"
+              className="out-shadow text-black bg-white   w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+            >
               <FaGithub />
-            </button>
-            <button className="out-shadow text-black bg-white w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md">
+            </a>
+            <a
+              href="https://www.instagram.com/mukti_040/?hl=en"
+              className="out-shadow text-black bg-white w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+            >
               <FaInstagram />
-            </button>
-            <button className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md">
+            </a>
+            <a
+              href="https://www.tiktok.com/@mkt_code?_t=8jeWnsgGXBw&_r=1"
+              className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+            >
               <FaTiktok />
-            </button>
-            <button className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abdul-mukti-41b876264/"
+              className="out-shadow text-black bg-white  w-max md:px-3 px-2 py-1 md:py-2 text-xl flex justify-center items-center rounded-md"
+            >
               <FaLinkedin />
-            </button>
+            </a>
           </div>
           <div className="mt-5">
             <button className="md:px-12 px-10   rounded-md text-gray-800 md:py-3 py-2 text-lg out-shadow bg-white">
