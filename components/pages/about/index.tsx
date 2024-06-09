@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import ai from "@/public/assets/ai.png";
-const pdf = "http://localhost:3000/mukti.pdf";
 
+const pdf = "https://mukti-portofolio.vercel.app/mukti.pdf";
 function About() {
   const downloadCv = (url: string) => {
     if (typeof document !== "undefined") {

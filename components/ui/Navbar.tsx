@@ -25,10 +25,6 @@ function Navbar() {
       name: "Projects",
     },
     {
-      href: "/player",
-      name: "Player",
-    },
-    {
       href: "/Contact",
       name: "Contact",
     },
