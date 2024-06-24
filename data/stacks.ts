@@ -6,6 +6,12 @@ export const stacks: any[] = [
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis temporibus nulla, voluptatibus libero error aliquid vero blanditiis dolores perferendis iusto.",
   },
   {
+    name: "Typescript",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis temporibus nulla, voluptatibus libero error aliquid vero blanditiis dolores perferendis iusto.",
+  },
+  {
     name: "PHP",
     icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
     description:

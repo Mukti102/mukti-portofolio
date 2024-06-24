@@ -21,7 +21,7 @@ function Navbar() {
       name: "Skills",
     },
     {
-      href: "/Projects/ReactJs",
+      href: "/Projects",
       name: "Projects",
     },
     {
@@ -65,10 +65,7 @@ function Navbar() {
         <Link href="/" className="text-2xl flex-1 flex justify-center">
           <FaHome />
         </Link>
-        <Link
-          href="/Projects/ReactJs"
-          className="text-xl flex-1 flex justify-center"
-        >
+        <Link href="/Projects" className="text-xl flex-1 flex justify-center">
           <FaLaptopCode />
         </Link>
         <Link href="/Contact" className="text-xl flex-1 justify-center flex">
