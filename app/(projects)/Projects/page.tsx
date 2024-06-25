@@ -3,7 +3,7 @@ import { stacks } from "@/data/stacks";
 import Link from "next/link";
 import { Projects } from "@/data/projects/projects";
 import CardProjects from "@/components/pages/Projects/cards";
-function page() {
+function Project() {
   return (
     <div className="w-full md:mt-3 py-32 bg-gray-100 gap-10 flex flex-col px-6 md:px-10 md:justify-center ">
       {/* title */}
@@ -28,4 +28,4 @@ function page() {
   );
 }
 
-export default page;
+export default Project;

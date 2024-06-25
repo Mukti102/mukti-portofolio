@@ -15,7 +15,7 @@ function SongControl() {
   const { setActiveSongIndex, activeSongIndex, songs } = useZustand();
 
   const style = {
-    background: `linear-gradient(to right  , white ${curentPosition(
+    background: `linear-gradient(to right  , green ${curentPosition(
       currentTime,
       duration
     )}%,gray ${curentPosition(currentTime, duration)}%)`,
@@ -40,7 +40,7 @@ function SongControl() {
 
   return (
     <div className="flex-1 sm:flex  flex-col gap-1 items-center justify-center h-full">
-      <div className="w-full   h-full items-center sm:h-max flex gap-10 sm:justify-center justify-end">
+      <div className="w-full  h-full items-center sm:h-max flex gap-10 sm:justify-center justify-end">
         <button onClick={() => prevSong()} className="sm:inline hidden">
           <SkipNext className="w-[14px] h-[14px] fill-current flip" />
         </button>

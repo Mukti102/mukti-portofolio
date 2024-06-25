@@ -11,7 +11,7 @@ function Volume() {
   };
 
   const style = {
-    background: `linear-gradient(to right,white ${volume * 100}% ,black ${
+    background: `linear-gradient(to right,green ${volume * 100}% ,gray ${
       volume * 100
     }%)`,
   };
