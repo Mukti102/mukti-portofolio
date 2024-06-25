@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 function CardProjects({ project }: { project: any }) {
   return (
-    <div key={project.id} className="md:w-[30%] w-full  my-4 md:m-3">
+    <div key={project.id} className="md:w-[30%] text-black w-full  my-4 md:m-3">
       <div className="border-[1px] bg-gray-100 out-shadow w-full p-4 border-slate-200 rounded-sm">
         <div className="md:min-w-48 border-[1.3px] group border-gray-400 md:h-48 rounded-md min-w-full relative overflow-hidden h-52">
           <div className="absolute left-0 top-0 right-0 bottom-96 group-hover:bottom-0 transition-all duration-500 bg-gray-300 bg-opacity-20  backdrop-blur-sm ease-in-out flex justify-center items-center">
@@ -27,7 +27,7 @@ function CardProjects({ project }: { project: any }) {
           <div className="absolute top-0 bottom-0 left-0 right-0 z-50 hover:backdrop-blur-none transition-all duration-300 cursor-pointer"></div>
         </div>
         <div className="my-2">
-          <h1 className="font-bold text-xl">{project.title}</h1>
+          <h1 className="font-bold text-black text-xl">{project.title}</h1>
         </div>
         <div className="my-2 flex">
           {project.techStack.map((item: [string]) => {
@@ -39,7 +39,7 @@ function CardProjects({ project }: { project: any }) {
           })}
         </div>
         <div className="my-2">
-          <p className="text-sm">
+          <p className="text-sm text-black">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
             sint!
           </p>
