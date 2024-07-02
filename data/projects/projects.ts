@@ -33,7 +33,7 @@ export const Projects: Projects[] = [
     description: "",
     techStack: ["React Js", "Taiwindcss"],
     image: store,
-    link: "https://web-store-app-906e0.firebaseapp.com/",
+    link: "https://web-store-app-eight.vercel.app/",
   },
   {
     id: 3,
