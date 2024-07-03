@@ -44,7 +44,7 @@ function Navbar() {
           className="font-bold z-50 w-max px-3 md:px-5 md:py-1 out-shadow rounded-md h-max"
         >
           <h1 className="text-black text-lg md:text-2xl">
-            SPEC<span className="text-pink-500">TER</span>
+            SPEC<span className="text-primary">TER</span>
           </h1>
         </a>
         {/* ul list */}
@@ -52,7 +52,7 @@ function Navbar() {
           {lists.map((item, index) => {
             return (
               <li key={index}>
-                <Link href={item.href} className="hover:text-pink-500">
+                <Link href={item.href} className="hover:text-primary">
                   {item.name}
                 </Link>
               </li>
@@ -61,7 +61,7 @@ function Navbar() {
         </ul>
         {/* togle  */}
         <Toggle />
-        <div className="h-14 z-[1000] rounded-tr-xl rounded-tl-xl  w-screen items-center gap-6 flex md:hidden bg-pink-500 fixed bottom-0 text-white  right-0 left-0">
+        <div className="h-14 z-[1000] rounded-tr-xl rounded-tl-xl  w-screen items-center gap-6 flex md:hidden bg-primary fixed bottom-0 text-white  right-0 left-0">
           {/* <a className="text-2xl flex-1 flex justify-center">
           <FaLaptopCode />
         </a> */}

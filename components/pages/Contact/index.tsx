@@ -13,7 +13,7 @@ function Contact() {
         className="max-w-max mx-auto"
       >
         <h1 className="text-3xl text-black font-extrabold">
-          Contact <span className="text-pink-500">Me</span>
+          Contact <span className="text-primary ">Me</span>
         </h1>
       </div>
       {/* form */}
@@ -26,7 +26,7 @@ function Contact() {
         <div className="w-full  flex md:flex gap-2">
           <div className="flex-1 hidden out-shadow px-2  rounded-md min-h-max py-4  md:flex justify-center items-center">
             <div className="text-sm  flex justify-center flex-col items-center text-center">
-              <span className="text-pink-500 text-sm md:text-lg">
+              <span className="text-primary  text-sm md:text-lg">
                 <FaRegAddressCard />
               </span>
               <h2 className="text-xs text-black mt-1 font-semibold">Adress</h2>
@@ -37,7 +37,7 @@ function Contact() {
           </div>
           <div className="flex-1 out-shadow  rounded-md min-h-max py-4  flex justify-center items-center">
             <div className="text-sm flex justify-center flex-col items-center text-center">
-              <span className="text-pink-500 text-lg">
+              <span className="text-primary  text-lg">
                 <MdOutlineLocalPhone />
               </span>
               <h2 className="text-xs mt-1 text-black font-semibold">
@@ -48,7 +48,7 @@ function Contact() {
           </div>
           <div className="flex-1 out-shadow  rounded-md min-h-max py-4  flex justify-center items-center">
             <div className="text-sm  flex justify-center flex-col items-center text-center">
-              <span className="text-pink-500 text-lg">
+              <span className="text-primary  text-lg">
                 <MdMailOutline />
               </span>
               <h2 className="text-xs mt-1 text-black font-semibold">Email</h2>

@@ -9,12 +9,18 @@ import { SiNextdotjs } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
+
+export type teachStack = {
+  name: string;
+  color: string;
+};
+
 export interface Projects {
   id: number;
   image: any;
   title: string;
   description: string;
-  techStack: string[];
+  techStack: teachStack[];
   link: string;
 }
 
@@ -23,7 +29,17 @@ export const Projects: Projects[] = [
     id: 1,
     title: "Movie",
     description: "",
-    techStack: ["React Js", "Taiwindcss"],
+    // techStack: ["React Js", "Taiwindcss"],
+    techStack: [
+      {
+        name: "React Js",
+        color: "teal",
+      },
+      {
+        name: "Tailwindcss",
+        color: "blue",
+      },
+    ],
     image: movie,
     link: "https://movie-web-app-five.vercel.app/",
   },
@@ -31,7 +47,17 @@ export const Projects: Projects[] = [
     id: 2,
     title: "Eccomerse",
     description: "",
-    techStack: ["React Js", "Taiwindcss"],
+    // techStack: ["React Js", "Taiwindcss"],
+    techStack: [
+      {
+        name: "React Js",
+        color: "teal",
+      },
+      {
+        name: "Tailwindcss",
+        color: "sky",
+      },
+    ],
     image: store,
     link: "https://web-store-app-906e0.firebaseapp.com/",
   },
@@ -39,7 +65,21 @@ export const Projects: Projects[] = [
     id: 3,
     title: "Awas Imsak",
     description: "",
-    techStack: ["Next Js", "Taiwindcss", "Typescript"],
+    // techStack: ["Next Js", "Taiwindcss", "Typescript"],
+    techStack: [
+      {
+        name: "Next Js",
+        color: "slate",
+      },
+      {
+        name: "Tailwindcss",
+        color: "pink",
+      },
+      {
+        name: "Typescript",
+        color: "blue",
+      },
+    ],
     image: imsak,
     link: "https://awas-imsak.vercel.app/",
   },
@@ -47,7 +87,21 @@ export const Projects: Projects[] = [
     id: 4,
     title: "MBlogs",
     description: "",
-    techStack: ["Laravel", "PHP", "Tailwindcss"],
+    // techStack: ["Laravel", "PHP", "Tailwindcss"],
+    techStack: [
+      {
+        name: "Laravel",
+        color: "red",
+      },
+      {
+        name: "PHP",
+        color: "purple",
+      },
+      {
+        name: "Tailwindcss",
+        color: "blue",
+      },
+    ],
     image: blog,
     link: "https://awas-imsak.vercel.app/",
   },

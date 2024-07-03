@@ -12,7 +12,7 @@ function Skills() {
           className="w-max mx-auto"
           data-aos-duration="1500"
         >
-          <h1 className="font-black text-2xl md:text-3xl text-pink-500">
+          <h1 className="font-black text-2xl md:text-3xl text-primary">
             Tech <span className="text-black">Stacks I use</span>
           </h1>
         </div>
@@ -48,7 +48,7 @@ function Skills() {
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
-          <h1 className="font-black text-2xl md:text-3xl text-pink-500">
+          <h1 className="font-black text-2xl md:text-3xl text-primary">
             Certificates<span className="text-black"> that i got</span>
           </h1>
         </div>

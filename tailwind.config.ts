@@ -20,7 +20,7 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#020617",
-        primary: "#1DB954",
+        primary: "#d61f69",
         indigo: "#00bfff",
       },
       backgroundImage: {

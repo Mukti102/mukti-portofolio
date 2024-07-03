@@ -22,7 +22,7 @@ function Hero() {
           className="md:flex-1 z-50 pl-0 pr-0 md:pl-5 md:pr-32 h-max  md:leading-[50px]"
         >
           <h2 className="md:text-2xl text-black text-xl">Hello It's me</h2>
-          <h1 className="font-black text-[2rem] md:text-[3rem] text-pink-500">
+          <h1 className="font-black text-[2rem] md:text-[3rem] text-primary">
             Mukti
           </h1>
           <span className="md:text-3xl text-black text-xl">

@@ -26,11 +26,11 @@ function About() {
         className="flex-1 touch-element h-max leading-[50px]"
       >
         <h1 className="font-bold mb-0 md:mb-5 text-[2.5rem] md:text-[3rem] text-black">
-          About <span className="text-pink-500">Me</span>
+          About <span className="text-primary">Me</span>
         </h1>
-        <span className="md:text-xl text-lg text-pink-500">
+        <span className="md:text-xl text-lg text-primary">
           And I am{" "}
-          <span className="text-pink-500 capitalize">fullstack developer </span>
+          <span className="text-primary  capitalize">fullstack developer </span>
         </span>
         <p className="md:text-[16px] text-[14px] leading-5 md:leading-6 md:text-gray-500 text-gray-500 font-semibold my-0">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor

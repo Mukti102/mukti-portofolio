@@ -9,7 +9,7 @@ function Project() {
       {/* title */}
       <div className="mx-auto">
         <h1 className="font-black text-black text-3xl">
-          Projects <span className="text-pink-500">Latest</span>
+          Projects <span className="text-primary">Latest</span>
         </h1>
       </div>
       <div
