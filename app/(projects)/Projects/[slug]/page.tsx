@@ -1,27 +1,43 @@
 import { Carousel } from "flowbite-react";
-import Markdown, { MarkdownToJSX } from "markdown-to-jsx";
+import Markdown from "markdown-to-jsx";
 import { RxArrowTopRight } from "react-icons/rx";
 import { GrGithub } from "react-icons/gr";
 import fs from "fs";
-import React, { useState } from "react";
+import path from "path";
+import React from "react";
 import Button from "@/components/ui/Button";
 import { Projects } from "@/data/projects/projects";
 import Image from "next/image";
-import {
-  eccomersSlider,
-  imsakSlider,
-  movieSlider,
-} from "@/data/projects/slider-asset";
 import Caraosel from "@/components/ui/Caraosel";
 import Link from "next/link";
 
-export default function page({ params }: { params: { slug: string } }) {
-  const project = Projects.find((item) => item.description == params.slug);
-  const getDescProject = () => {
-    const folder = `data/projects/description/${params.slug}.md`;
-    const content = fs.readFileSync(folder, "utf8");
-    return content;
+export async function generateStaticParams() {
+  const paths = Projects.map((project) => ({
+    slug: project.description,
+  }));
+  return paths;
+}
+
+export async function getProjectContent(slug: string) {
+  const project = Projects.find((item) => item.description === slug);
+  const folder = path.join(
+    process.cwd(),
+    `data/projects/description/${slug}.md`
+  );
+  const content = fs.readFileSync(folder, "utf8");
+
+  return {
+    project,
+    content,
   };
+}
+
+interface ProjectPageProps {
+  params: { slug: string };
+}
+
+const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
+  const { project, content } = await getProjectContent(params.slug);
 
   return (
     <div className="mt-16 w-full px-3 md:px-14 pb-24 pt-10">
@@ -33,7 +49,7 @@ export default function page({ params }: { params: { slug: string } }) {
       <section className="md:flex block  gap-6 mt-5 md:mt-10">
         {/* main */}
         <main className="md:w-[85%] w-full">
-          {/* caraosel */}
+          {/* carousel */}
           <Caraosel project={project} />
           <div className="flex mt-5 gap-3">
             <Button
@@ -53,7 +69,7 @@ export default function page({ params }: { params: { slug: string } }) {
           </div>
           <div>
             <article className="prose prose-slate">
-              <Markdown>{getDescProject()}</Markdown>
+              <Markdown>{content}</Markdown>
             </article>
           </div>
         </main>
@@ -97,4 +113,6 @@ export default function page({ params }: { params: { slug: string } }) {
       </section>
     </div>
   );
-}
+};
+
+export default ProjectPage;
