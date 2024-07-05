@@ -11,14 +11,11 @@ import Image from "next/image";
 import Caraosel from "@/components/ui/Caraosel";
 import Link from "next/link";
 
-export async function generateStaticParams() {
-  const paths = Projects.map((project) => ({
-    slug: project.description,
-  }));
-  return paths;
+interface ProjectPageProps {
+  params: { slug: string };
 }
 
-export async function getProjectContent(slug: string) {
+const getProjectContent = async (slug: string) => {
   const project = Projects.find((item) => item.description === slug);
   const folder = path.join(
     process.cwd(),
@@ -30,11 +27,7 @@ export async function getProjectContent(slug: string) {
     project,
     content,
   };
-}
-
-interface ProjectPageProps {
-  params: { slug: string };
-}
+};
 
 const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
   const { project, content } = await getProjectContent(params.slug);
@@ -114,5 +107,11 @@ const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
     </div>
   );
 };
+
+export async function generateStaticParams() {
+  return Projects.map((project) => ({
+    slug: project.description,
+  }));
+}
 
 export default ProjectPage;
