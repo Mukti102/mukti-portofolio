@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root  {
   --color-gradient : linear-gradient(red,blue)
 }
+
 
 @layer components {
   .underline-animation {
@@ -102,3 +104,18 @@
 .active{
   color: hotpink;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

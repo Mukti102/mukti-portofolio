@@ -10,6 +10,16 @@ const {
 
 const config: Config = {
   darkMode: "class",
+  safelist: [
+    "bg-red-200",
+    "bg-green-200",
+    "bg-sky-200",
+    "bg-purple-200",
+    "bg-slate-200",
+    "bg-blue-200",
+    "bg-teal-200",
+    "bg-yellow-200",
+  ],
   content: [
     flowbite.content(),
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,6 +43,7 @@ const config: Config = {
   plugins: [
     flowbite.plugin(),
     require("daisyui"),
+    require("@tailwindcss/typography"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
