@@ -39,7 +39,7 @@ function About() {
         </p>
         <div className="my-5">
           <button
-            onClick={() => downloadCv(pdf)}
+            // onClick={() => downloadCv(pdf)}
             className="md:px-12 px-9 py-2 bg-gray-50 rounded-md text-gray-800 md:py-3 md:text-lg text-sm out-shadow"
           >
             Download CV
