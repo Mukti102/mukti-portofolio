@@ -35,7 +35,7 @@ const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
   return (
     <div className="mt-16 w-full px-3 md:px-14 pb-24 pt-10">
       {/* title */}
-      <div className="text-2xl w-max mx-auto uppercase font-bold">
+      <div className="text-2xl w-max text-black mx-auto uppercase font-bold">
         <h1>{project?.title}</h1>
       </div>
       {/* section */}
@@ -61,7 +61,7 @@ const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
             </Button>
           </div>
           <div>
-            <article className="prose prose-slate">
+            <article className="prose text-black prose-slate">
               <Markdown>{content}</Markdown>
             </article>
           </div>
@@ -70,10 +70,10 @@ const ProjectPage: React.FC<ProjectPageProps> = async ({ params }) => {
         <section className="px-5 w-full md:w-[40%]">
           {/* head */}
           <div className="flex justify-between text-sm">
-            <div className="font-bold text-lg">
+            <div className="font-bold text-lg text-black">
               <h3>Project Lainya</h3>
             </div>
-            <a href="/Projects" className="text-sm text-blue-600">
+            <a href="/Projects" className="md:text-sm text-xs text-blue-600">
               <span>Lihat Semua</span>
             </a>
           </div>
