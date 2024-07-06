@@ -25,6 +25,17 @@ import mblog8 from "@/public/assets/Projects/slider/blog-cms/slide8.png";
 import mblog9 from "@/public/assets/Projects/slider/blog-cms/slide9.png";
 import mblog10 from "@/public/assets/Projects/slider/blog-cms/slide10.png";
 
+import absensi1 from "@/public/assets/Projects/slider/absesni-app/1.png";
+import absensi2 from "@/public/assets/Projects/slider/absesni-app/2.png";
+import absensi3 from "@/public/assets/Projects/slider/absesni-app/3.png";
+import absensi4 from "@/public/assets/Projects/slider/absesni-app/4.png";
+import absensi5 from "@/public/assets/Projects/slider/absesni-app/5.png";
+import absensi6 from "@/public/assets/Projects/slider/absesni-app/6.png";
+import absensi7 from "@/public/assets/Projects/slider/absesni-app/7.png";
+import absensi8 from "@/public/assets/Projects/slider/absesni-app/8.png";
+import absensi9 from "@/public/assets/Projects/slider/absesni-app/9.png";
+import absensi10 from "@/public/assets/Projects/slider/absesni-app/10.png";
+
 export const eccomersSlider = [eccomerse1, eccomerse2, eccomerse3, eccomerse4];
 export const movieSlider = [movieSlide1, movieSlide2, movieSlide3];
 export const imsakSlider = [imsak2, imsak1, imsak3, imsak4, imsak5, imsak6];
@@ -39,4 +50,16 @@ export const blogSlider = [
   mblog8,
   mblog9,
   mblog10,
+];
+export const absensiSLider = [
+  absensi1,
+  absensi2,
+  absensi3,
+  absensi4,
+  absensi5,
+  absensi6,
+  absensi7,
+  absensi8,
+  absensi9,
+  absensi10,
 ];

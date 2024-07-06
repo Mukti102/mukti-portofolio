@@ -2,11 +2,13 @@ import blog from "@/public/assets/Projects/Screenshot 2024-05-26 211712.png";
 import movie from "@/public/assets/Projects/web movie .png";
 import store from "@/public/assets/Projects/web store.png";
 import imsak from "@/public/imsak-app.png";
+import absensi from "@/public/assets/Projects/1.png";
 import {
   blogSlider,
   eccomersSlider,
   imsakSlider,
   movieSlider,
+  absensiSLider,
 } from "./slider-asset";
 
 export type teachStack = {
@@ -112,6 +114,30 @@ export const Projects: IProjects[] = [
     ],
     image: blog,
     slider: blogSlider,
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "APLIKASI ABSENSI SEKOLAH MENENGAH",
+    description: "AbsensiApp",
+    github: "#",
+    // techStack: ["Laravel", "PHP", "Tailwindcss"],
+    techStack: [
+      {
+        name: "Laravel",
+        color: "red",
+      },
+      {
+        name: "PHP",
+        color: "purple",
+      },
+      {
+        name: "Tailwindcss",
+        color: "blue",
+      },
+    ],
+    image: absensi,
+    slider: absensiSLider,
     link: "#",
   },
 ];
