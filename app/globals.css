@@ -6,9 +6,6 @@
 :root  {
   --color-gradient : linear-gradient(red,blue)
 }
-*{
-  color: black;
-}
 
 
 @layer components {
