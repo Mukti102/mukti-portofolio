@@ -1,6 +1,6 @@
 Web Aplikasi Ini Dirancang Untuk Mepermudah Administrator mengelola data sekolah sekaligus mempermudah guru mapel dalam melakukan absensi Kehadiran siswa ketika kegiatan belajar mengajar berlangsung
 
-#### Terdapat 2 Jenis Pengguna:
+#### Terdapat 3 Jenis Pengguna:
 
 1. Admin
 2. Guru
