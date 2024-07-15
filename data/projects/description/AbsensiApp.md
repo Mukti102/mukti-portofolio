@@ -17,12 +17,14 @@ Web Aplikasi Ini Dirancang Untuk Mepermudah Administrator mengelola data sekolah
 #### ADMINISTRATOR
 
 - Mengelola Data admin, Data Siswa,Data Guru,
+- import dan export Data Siswa dan Data Guru dari exel,
 - Mengelola Data Sekolah
 - Data Tahun Pelajaran
 - Data Kelas
 - Data Mata Pelajaran
 - Data Pembelajaran
 - Absensi
+- export data absensi ke PDF
 - Notifikasi
 - Profile
 
@@ -31,6 +33,7 @@ Web Aplikasi Ini Dirancang Untuk Mepermudah Administrator mengelola data sekolah
 - Data Siswa
 - Data Kelas
 - Absensi
+- Export Absensi ke PDF
 - Notifikasi
 - Profile
 
