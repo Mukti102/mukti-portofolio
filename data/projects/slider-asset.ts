@@ -35,6 +35,7 @@ import absensi7 from "@/public/assets/Projects/slider/absesni-app/7.png";
 import absensi8 from "@/public/assets/Projects/slider/absesni-app/8.png";
 import absensi9 from "@/public/assets/Projects/slider/absesni-app/9.png";
 import absensi10 from "@/public/assets/Projects/slider/absesni-app/10.png";
+import absensi11 from "@/public/assets/Projects/slider/absesni-app/11.png";
 
 export const eccomersSlider = [eccomerse1, eccomerse2, eccomerse3, eccomerse4];
 export const movieSlider = [movieSlide1, movieSlide2, movieSlide3];
@@ -62,4 +63,5 @@ export const absensiSLider = [
   absensi8,
   absensi9,
   absensi10,
+  absensi11,
 ];

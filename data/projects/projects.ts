@@ -118,7 +118,7 @@ export const Projects: IProjects[] = [
   },
   {
     id: 5,
-    title: "APLIKASI ABSENSI SEKOLAH MENENGAH",
+    title: "APLIKASI ABSENSI PEMBELAJARAN SISWA",
     description: "AbsensiApp",
     github: "#",
     // techStack: ["Laravel", "PHP", "Tailwindcss"],
