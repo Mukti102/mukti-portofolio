@@ -37,6 +37,9 @@ import absensi9 from "@/public/assets/Projects/slider/absesni-app/9.png";
 import absensi10 from "@/public/assets/Projects/slider/absesni-app/10.png";
 import absensi11 from "@/public/assets/Projects/slider/absesni-app/11.png";
 
+import rfid1 from "@/public/assets/Projects/slider/rfid/rfid1.png";
+import rfid2 from "@/public/assets/Projects/slider/rfid/rfid2.png";
+
 export const eccomersSlider = [eccomerse1, eccomerse2, eccomerse3, eccomerse4];
 export const movieSlider = [movieSlide1, movieSlide2, movieSlide3];
 export const imsakSlider = [imsak2, imsak1, imsak3, imsak4, imsak5, imsak6];
@@ -65,3 +68,5 @@ export const absensiSLider = [
   absensi10,
   absensi11,
 ];
+
+export const rfid = [rfid1, rfid2];

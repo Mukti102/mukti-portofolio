@@ -3,12 +3,14 @@ import movie from "@/public/assets/Projects/web movie .png";
 import store from "@/public/assets/Projects/web store.png";
 import imsak from "@/public/imsak-app.png";
 import absensi from "@/public/assets/Projects/1.png";
+import RFID from "@/public/assets/Projects/rfid.png";
 import {
   blogSlider,
   eccomersSlider,
   imsakSlider,
   movieSlider,
   absensiSLider,
+  rfid,
 } from "./slider-asset";
 
 export type teachStack = {
@@ -139,5 +141,29 @@ export const Projects: IProjects[] = [
     image: absensi,
     slider: absensiSLider,
     link: "#",
+  },
+  {
+    id: 6,
+    title: "RFID NUSANTARA, SOLUTION SYSTEM RFID",
+    description: "Rfid",
+    github: "#",
+    // techStack: ["Laravel", "PHP", "Tailwindcss"],
+    techStack: [
+      {
+        name: "React JS",
+        color: "red",
+      },
+      {
+        name: "GSAP",
+        color: "purple",
+      },
+      {
+        name: "Tailwindcss",
+        color: "blue",
+      },
+    ],
+    image: RFID,
+    slider: rfid,
+    link: "https://rfidnusantara.com",
   },
 ];
