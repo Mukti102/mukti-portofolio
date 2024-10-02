@@ -2,9 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import ai from "@/public/assets/ai.png";
-import Link from "next/link";
 
-const pdf = "https://mukti-portofolio.vercel.app/mukti.pdf";
+// const pdf = "https://mukti-portofolio.vercel.app/mukti.pdf";
+const pdf = "";
 function About() {
   const downloadCv = (url: string) => {
     if (typeof document !== "undefined") {
