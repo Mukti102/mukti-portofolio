@@ -32,7 +32,7 @@ Web Aplikasi Ini Dirancang Untuk Mepermudah Administrator mengelola data sekolah
 
 - Data Siswa
 - Data Kelas
-- Absensi
+- Absensi Scan Qr code / Manual
 - Export Absensi ke PDF
 - Notifikasi
 - Profile
@@ -40,6 +40,7 @@ Web Aplikasi Ini Dirancang Untuk Mepermudah Administrator mengelola data sekolah
 #### SISWA
 
 - Riwayat Absensi
+- Download Qr code
 - Notifikasi
 - Profil
 

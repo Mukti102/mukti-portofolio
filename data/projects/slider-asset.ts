@@ -36,9 +36,19 @@ import absensi8 from "@/public/assets/Projects/slider/absesni-app/8.png";
 import absensi9 from "@/public/assets/Projects/slider/absesni-app/9.png";
 import absensi10 from "@/public/assets/Projects/slider/absesni-app/10.png";
 import absensi11 from "@/public/assets/Projects/slider/absesni-app/11.png";
+import absensi12 from "@/public/assets/Projects/slider/absesni-app/12.png";
+import absensi13 from "@/public/assets/Projects/slider/absesni-app/13.png";
 
 import rfid1 from "@/public/assets/Projects/slider/rfid/rfid1.png";
 import rfid2 from "@/public/assets/Projects/slider/rfid/rfid2.png";
+
+import webschool1 from "@/public/assets/Projects/slider/webschool/1.png";
+import webschool2 from "@/public/assets/Projects/slider/webschool/2.png";
+import webschool3 from "@/public/assets/Projects/slider/webschool/3.png";
+import webschool4 from "@/public/assets/Projects/slider/webschool/4.png";
+import webschool5 from "@/public/assets/Projects/slider/webschool/5.png";
+import webschool6 from "@/public/assets/Projects/slider/webschool/6.png";
+import webschool7 from "@/public/assets/Projects/slider/webschool/7.png";
 
 export const eccomersSlider = [eccomerse1, eccomerse2, eccomerse3, eccomerse4];
 export const movieSlider = [movieSlide1, movieSlide2, movieSlide3];
@@ -67,6 +77,18 @@ export const absensiSLider = [
   absensi9,
   absensi10,
   absensi11,
+  absensi12,
+  absensi13,
 ];
 
 export const rfid = [rfid1, rfid2];
+
+export const webschool = [
+  webschool1,
+  webschool2,
+  webschool3,
+  webschool4,
+  webschool5,
+  webschool6,
+  webschool7,
+];

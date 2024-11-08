@@ -2,12 +2,14 @@ import blog from "@/public/assets/Projects/Screenshot 2024-05-26 211712.png";
 import movie from "@/public/assets/Projects/web movie .png";
 import store from "@/public/assets/Projects/web store.png";
 import imsak from "@/public/imsak-app.png";
+import web_school from "@/public/assets/Projects/slider/webschool/1.png";
 import absensi from "@/public/assets/Projects/1.png";
 import RFID from "@/public/assets/Projects/rfid.png";
 import {
   blogSlider,
   eccomersSlider,
   imsakSlider,
+  webschool,
   movieSlider,
   absensiSLider,
   rfid,
@@ -165,5 +167,28 @@ export const Projects: IProjects[] = [
     image: RFID,
     slider: rfid,
     link: "https://rfidnusantara.com",
+  },
+  {
+    id: 7,
+    title: "WEB SEKOLAH DAN PPDB",
+    description: "webschool",
+    github: "#",
+    techStack: [
+      {
+        name: "React JS",
+        color: "teal",
+      },
+      {
+        name: "Laravel",
+        color: "red",
+      },
+      {
+        name: "Tailwindcss",
+        color: "blue",
+      },
+    ],
+    image: web_school,
+    slider: webschool,
+    link: "https://web-school-eta.vercel.app/",
   },
 ];
