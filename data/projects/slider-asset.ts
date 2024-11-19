@@ -38,6 +38,11 @@ import absensi10 from "@/public/assets/Projects/slider/absesni-app/10.png";
 import absensi11 from "@/public/assets/Projects/slider/absesni-app/11.png";
 import absensi12 from "@/public/assets/Projects/slider/absesni-app/12.png";
 import absensi13 from "@/public/assets/Projects/slider/absesni-app/13.png";
+import absensi14 from "@/public/assets/Projects/slider/absesni-app/14.png";
+import absensi15 from "@/public/assets/Projects/slider/absesni-app/15.png";
+import absensi16 from "@/public/assets/Projects/slider/absesni-app/16.png";
+import absensi17 from "@/public/assets/Projects/slider/absesni-app/17.png";
+import absensi18 from "@/public/assets/Projects/slider/absesni-app/18.png";
 
 import rfid1 from "@/public/assets/Projects/slider/rfid/rfid1.png";
 import rfid2 from "@/public/assets/Projects/slider/rfid/rfid2.png";
@@ -79,6 +84,11 @@ export const absensiSLider = [
   absensi11,
   absensi12,
   absensi13,
+  absensi14,
+  absensi15,
+  absensi16,
+  absensi17,
+  absensi18,
 ];
 
 export const rfid = [rfid1, rfid2];

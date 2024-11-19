@@ -14,7 +14,7 @@ function Hero() {
     <>
       {/* hero */}
       <div
-        className={` w-full pt-28 font-bold block  md:flex items-center justify-between h-max z-40  md:gap-5 px-5 md:px-20`}
+        className={` w-full pt-28 font-bold block  md:flex items-center justify-between h-screen  z-40  md:gap-5 px-5 md:px-20`}
       >
         <div
           data-aos="fade-right"
